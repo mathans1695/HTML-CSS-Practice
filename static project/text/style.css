@@ -1,0 +1,183 @@
+/* Font face declaration */
+@font-face {
+  font-family: 'Bearpaw';
+  src: url('web-fonts/fonts/bearpaw_-webfont.woff'),
+        url('web-fonts/fonts/bearpaw_-webfont.woff2'),
+		url('web-fonts/fonts/BEARPAW_.ttf');
+		
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'josefinslab';
+  src: url('web-fonts/fonts/josefinslab-regular-webfont.woff'),
+       url('web-fonts/fonts/josefinslab-regular-webfont.woff2'),
+	   url('web-fonts/fonts/JosefinSlab-Regular.ttf');
+		
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+  font-size: 10px;
+  line-height: 1.5rem;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+  
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: left;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+h1, h2 {
+  font-family: 'Bearpaw', Helvetica, aerial, sans-serif;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  letter-spacing: 5px;
+  word-spacing: 3px;
+}
+
+h2 {
+  font-size: 2em;
+  letter-spacing: 3px;
+  word-spacing: 2px;
+}
+
+p, li {
+  font-family: josefinslab, times, serif;
+  font-size: 1.5em;
+  letter-spacing: 0.3px;
+  word-spacing: 1px;
+  line-height: 1.5rem;
+}
+
+li {
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+section > h2 + p {
+  padding-left: 20px;
+}
+
+nav ul li{
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: blue;
+  border-bottom: 1px solid;
+}
+
+a:visited {
+  color: pink;
+}
+
+a:focus {
+  background-color: #a66;
+  color: white;
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover {
+  background-color: green;
+  color: white;
+  text-decoration: none;
+}
+
+a:active {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+
+nav a {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  width: 7rem;
+  margin-right: 10px;
+}
+
+nav a:link {
+  background-color: purple;
+}
+
+nav a:visited {
+  background-color: pink;
+  color: white;
+}
+
+nav a:focus {
+  outline: none;
+  background-color: #a66;
+  color: white;
+}
+
+nav a:hover {
+  background-color: green;
+  color: white;
+}
+
+nav a:active {
+  background-color: black;
+  color: white;
+}
+
+a[href^='https'] {
+  background-image: url('external-link-52.png');
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: 100% 0;
+  padding-right: 20px;
+}

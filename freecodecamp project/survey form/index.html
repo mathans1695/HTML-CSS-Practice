@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+  <head>
+    <title>Survey Form</title>
+	<link rel='stylesheet' href='style.css' type='text/css'>
+  </head>
+  <body>
+    <header>
+	  <h1 id='title'>Mahalingam Survey Form</h2>
+	  <p id='description'>The survey gathers your interests, your responses will be in good hands.</p>
+	</header>
+	
+	<main>
+	  <form id='survey-form'>
+	    <div class='name'>
+	      <label for='name' id='name-label'>Full Name</label>
+		  <input type='text' id='name' name='username' placeholder='Enter your name'>
+		</div>
+		  
+		<div class='mail'>
+		  <label for='email' id='email-label'>E-Mail Address</label>
+		  <input type='email' id='email' name='usermail' placeholder='Enter your email address'>
+		</div>
+		
+		<div class='age'>
+		  <label for='age'>Age <abbr title='Optional'>?</abbr></label>
+		  <input type='number' id='age' name='userage' placeholder='Age' min='1' max='200'>
+		</div>
+		
+		<div class='number'>
+		  <label for='number' id='email-label'>Phone Number</label>
+		  <input type='number' id='number' name='userno' placeholder='Enter your phone number' min='9000000000' max='9999999999'>
+		</div>
+		
+		<div class='dropdown'>
+		  <label for='dropdown'>What will you aim for?</label>
+		  <select id='dropdown' name='aim'>
+		    <option disabled checked>Select from dropdown</option>
+		    <option value='frontend'>FrontEnd Developer</option>
+		    <option value='backend'>BackEnd Developer</option>
+		    <option value='fullstack'>Full Stack Developer</option>
+		    <option value='freelancer'>Freelancer</option>
+		    <option value='other'>Other</option>
+		  </select>
+		</div>
+		
+		<div class='checkbox'>
+		  <label for='checkbox'>How do you learn new things?</label>
+		  <div class='checkbox-items'>
+		    <input type='checkbox' id='videos' name='media' value='videos'>
+		    <label for='videos'>Videos</label>
+		  </div>
+		  
+		  <div class='checkbox-items'>
+		    <input type='checkbox' id='websites' name='media' value='websites'>
+		    <label for='websites'>Websites</label>
+		  </div>
+		  
+		  <div class='checkbox-items'>
+		    <input type='checkbox' id='practicing' name='media' value='practicing'>
+		    <label for='practicing'>Practice</label>
+		  </div>
+		  
+		  <div class='checkbox-items'>
+		    <input type='checkbox' id='friends' name='media' value='friends'>
+		    <label for='friends'>Through friends</label>
+		  </div>
+		  
+		  <div class='checkbox-items'>
+		    <input type='checkbox' id='listening' name='media' value='listening'>
+		    <label for='listening'>Podcasts</label>
+		  </div>
+		  
+		  <div class='checkbox-items'>
+		    <input type='checkbox' id='other' name='media' value='other'>
+		    <label for='other'>Other</label>
+		  </div>
+		</div>
+		
+		<div class='radio'>
+		  <label for='radio'>Are you willing to learn programming?</label>
+		  
+		  <div class='radio-items'>
+		    <input type='radio' id='yes' name='willing' value='yes'>
+		    <label for='yes'>Yes</label>
+		  </div>
+		  
+		  <div class='radio-items'>
+		    <input type='radio' id='no' name='willing' value='no'>
+		    <label for='no'>No</label>
+		  </div>
+		</div>
+		
+		<div class='button'>
+		  <button id='button'>Submit</button>
+		</div>
+	  </form>
+	</main>
+  </body>
+</html>

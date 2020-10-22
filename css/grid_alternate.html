@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Grid layout alternative</title>
+	<style>
+	  * {
+	    display: border-box;
+	  }
+	  body {
+	    width: 90%;
+		max-width: 980px;
+	    margin: 0 auto;
+	  }
+	  
+	  .wrapper {
+		padding-right: 2.04081633%;
+	  }
+	  
+	  .col {
+		margin-left: 2.08333333%;
+		width: 6.25%;
+		flex: 1 1 auto;
+	    background-color: brown;
+	  }
+	  
+	  .row {
+	    display: flex;
+	  }
+	  
+	  .col.span2 {
+	    flex: 0 1 none;
+	    width: 14.5833333%;
+	  }
+	  .col.span3 {
+	    flex: 0 1 none;
+	    width: 22.9166667%;
+	  }
+	  .col.span4 {
+	    flex: 0 1 none;
+	    width: 31.25%;
+	  }
+	  .col.span5 {
+	    flex: 0 1 none;
+	    width: 39.5833333%;
+	  }
+	  .col.span6 {
+	    flex: 0 1 none;
+	    width: 47.9166667%;
+	  }
+	  .col.span7 {
+	    flex: 0 1 none;
+	    width: 56.25%;
+	  }
+	  .col.span8 {
+	    flex: 0 1 none;
+	    width: 64.5833333%;
+	  }
+	  .col.span9 {
+	    flex: 0 1 none;
+	    width: 72.9166667%;
+	  }
+	  .col.span10 {
+	    flex: 0 1 none;
+	    width: 81.25%;
+	  }
+	  .col.span11 {
+	    flex: 0 1 none;
+	    width: 89.5833333%;
+	  }
+	  .col.span12 {
+	    flex: 0 1 none;
+	    width: 97.9166667%;
+	  }
+	  
+	  .offset-by-one {
+	    margin-left: calc(6.25% + (2*2.08333333%));
+	  }
+	  
+	  .offset-by-two {
+	    margin-left: calc((6.25%*2) + (3*2.08333333%));
+	  }
+	</style>
+  </head>
+  <body>
+    <div class='wrapper'>
+	  <div class='row'>
+	    <div class='col'>1</div>
+		<div class='col'>1</div>
+		<div class='col'>1</div>
+		<div class='col'>1</div>
+		<div class='col'>1</div>
+		<div class='col'>1</div>
+		<div class='col'>1</div>
+		<div class='col'>1</div>
+		<div class='col'>1</div>
+		<div class='col'>1</div>
+		<div class='col'>1</div>
+		<div class='col'>1</div>
+	  </div>
+	  <div class='row'>
+	    <div class='col span2'>12</div>
+		<div class='col span1'>13</div>
+		<div class='col span7'>14</div>
+		<div class='col span2'>15</div>
+	  </div>
+	  <div class='row'>
+	    <div class='col span2 offset-by-two'>16</div>
+	  </div>
+  </body>
+</head>

@@ -1,0 +1,81 @@
+html {
+	font-size: 10px;
+}
+
+body h1 {
+	color: purple;
+	font-weight: bold;
+	font-size: 4em;
+}
+
+h1 + p {
+	font-size: xxx-large;
+	color: blue;
+}
+
+a:link {
+	color: pink;
+}
+
+a:visited {
+	color: green;
+}
+
+a:hover {
+	color: blue;
+	text-decoration: none;
+}
+
+a:focus {
+	color: red;
+	text-decoration: underline;
+	border: none;
+}
+
+a:active {
+	color: purple;
+}
+
+.manythings {
+	color: red;
+	font-size: 5rem;
+}
+
+p#onething {
+	background-color: black;
+	color: white;
+}
+
+* {
+	color: yellow;
+}
+
+.box p {
+	color: black;
+	font-weight: 900; 
+	font-size: 300%;
+}
+
+.box p:nth-child(3) {
+	color: grey;
+	font-weight: normal;
+}
+
+h1, h2, .intro {
+	color: blue;
+}
+
+p {
+	color: red;
+}
+
+.selector-parent p {
+	font-size: 1.2cm;
+}
+
+@media (min-width: 30em) {
+	body {
+	  background-image: url("download.jpg");
+	}
+}
+

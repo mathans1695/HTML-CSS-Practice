@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My spending record</title>
+    <link href="minimal-table.css" rel="stylesheet" type="text/css">
+    <style>
+	  tbody {
+	    font-size: 95%;
+	    font-style: italic;
+	  }
+
+	  tfoot {
+        font-weight: bold;
+	  }
+    </style>
+  </head>
+  <body>
+    <h1>My spending record</h1>
+
+      <table>
+        <caption>How I chose to spend my money</caption>
+		  <thead>
+		    <tr>
+              <th id='purchase'>Purchase</th>
+              <th id='location'>Location</th>
+              <th id='date'>Date</th>
+              <th id='evaluation'>Evaluation</th>
+              <th id='cost'>Cost (€)</th>
+            </tr>
+		  </thead>
+		  <tfoot>
+			<tr>
+              <td colspan='4'>SUM</td>
+              <td>118</td>
+			</tr>
+		  </tfoot>
+		  <tbody>
+			<tr>
+              <th id='haircut'>Haircut</th>
+              <td headers='location haircut'>Hairdresser</td>
+              <td headers='date haircut'>12/09</td>
+              <td headers='evaluation haircut'>Great idea</td>
+              <td headers='cost haircut'>30</td>
+			</tr>
+			<tr>
+              <th id='lasagna'>Lasagna</th>
+              <td headers='location lasagna'>Restaurant</td>
+              <td headers='date lasagna'>12/09</td>
+              <td headers='evaluation lasagna'>Regrets</td>
+              <td headers='cost lasagna'>18</td>
+			</tr>
+            <tr>
+              <th id='shoes'>Shoes</th>
+              <td headers='location shoes'>Shoeshop</td>
+              <td headers='date shoes'>13/09</td>
+              <td headers='evaluation shoes'>Big regrets</td>
+              <td headers='cost shoes'>65</td>
+			</tr>
+            <tr>
+              <th id='toothpaste'>Toothpaste</th>
+              <td headers='location toothpaste'>Supermarket</td>
+              <td headers='date toothpaste'>13/09</td>
+              <td headers='evaluation toothpaste'>Good</td>
+              <td headers='cost toothpaste'>5</td>
+			</tr>
+		  </tbody>
+    </table>
+
+  </body>
+</html>

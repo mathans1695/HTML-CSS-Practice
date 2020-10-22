@@ -1,0 +1,55 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: hsl(140, 100%, 77%);
+	color: white;
+}
+
+header {
+	text-align: center;
+}
+
+main {
+	max-width: 60%;
+	margin: 0 auto;
+	border: 5px solid white;
+	border-radius: 10px;
+    padding: 30px;
+	background-color: hsl(337, 100%, 77%);
+}
+
+div {
+	margin-top: 20px;
+}
+
+input, select {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+}
+
+.checkbox-items,
+.radio-items {
+	margin-top: 3px;
+}
+
+.checkbox-items input,
+.radio-items input {
+	display: inline-block;
+	width: initial;
+}
+
+label {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+input:focus, select:focus {
+	background-color: blue;
+	color: white;
+	transform: scale(1.05);
+}

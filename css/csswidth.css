@@ -1,0 +1,13 @@
+p {
+	color: red;
+	border-width: 1em;
+	border-style: double;
+	border-color: yellow;
+	box-sizing: content-box;
+	border-color: black;
+	padding: 10px;
+	margin: 0;
+	padding: 20px 5px;
+	width: fit-content;
+	background-color: rgba(0, 0, 0, 0.1);
+}

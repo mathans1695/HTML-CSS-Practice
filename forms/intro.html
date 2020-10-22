@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <meta lang='en-US'>
+    <title>Html Forms</title>
+	<style>
+	  form {
+	    width: 400px;
+		margin: 0 auto;
+		padding: 1em;
+	  }
+	  
+	  ul {
+	    list-style: none;
+	  }
+	  
+	  label {
+	    width: 90px;
+		display: inline-block;
+		text-align: right;
+	  }
+	  
+	  li {
+	    margin-bottom: 1em;
+	  }
+	  
+	  input, textarea {
+	    width: 250px;
+		font: 1px sans-serif;
+	  }
+	  
+	  textarea {
+	    vertical-align: top;
+		height: 100px;
+		padding: 5px;
+		box-sizing: border-box;
+	  }
+	  
+	  ul li:last-child {
+	    padding-left: 90px;
+	  }
+	  
+	  input:focus, textarea:focus {
+	    border: #000;
+	  }
+	  
+	  button {
+	    margin-left: .5em;
+	  }
+	</style>
+  </head>
+  <body>
+    <form action='#' method='get'>
+	  <ul>
+	    <li>
+		  <label for='name'>Name: </label>
+		  <input type='text' id='name' name='user_name' value='Your Name'>
+		</li>
+		<li>
+		  <label for='email'>Email: </label>
+		  <input type='email' id='email' name='user_email'>
+		</li>
+		<li>
+		  <label for='msg'>Message: </label>
+		  <textarea id='msg' name='user_message'></textarea>
+     	</li>
+		<li class='.button'>
+		  <button type='submit'>Submit</button>
+		</li>
+	  </ul>
+	</form>
+  </body>
+</html>

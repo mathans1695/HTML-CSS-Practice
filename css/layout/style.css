@@ -1,0 +1,20 @@
+.main {
+	height: 50vw;	
+	border: 1px solid purple;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.child {
+	width: 100px;
+	height: 100px;
+	border: 1px solid black;
+	text-align: center;
+	order: 2;
+}
+
+div.child:nth-of-type(5) {
+	align-self: flex-end;
+	order: 1;
+}

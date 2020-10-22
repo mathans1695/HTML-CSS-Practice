@@ -1,0 +1,52 @@
+/* Font face */
+@font-face {
+  font-family: 'Bearpaw';
+  src: url('fonts/bearpaw_-webfont.woff'),
+	   url('fonts/bearpaw_-webfont.woff2');
+	   
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'josefinslab';
+  src: url('fonts/josefinslab-regular-webfont.woff'),
+	   url('fonts/josefinslab-regular-webfont.woff2');
+	   
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* General setup */
+
+html {
+  font-size: 10px;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+/* Typography */
+
+h1 {
+  font-size: 3.2rem;
+  font-family: 'Bearpaw', 'times new roman', serif;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-family: 'Bearpaw', 'times new roman', serif;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  word-spacing: 0.6rem;
+  font-family: josefinslab, 'times new roman', serif;
+}
